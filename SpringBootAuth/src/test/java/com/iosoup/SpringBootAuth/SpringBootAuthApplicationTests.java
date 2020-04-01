@@ -1,10 +1,10 @@
-package com.iosoup.AuthSpringBoot;
+package com.iosoup.SpringBootAuth;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class AuthSpringBootApplicationTests {
+class SpringBootAuthApplicationTests {
 
 	@Test
 	void contextLoads() {

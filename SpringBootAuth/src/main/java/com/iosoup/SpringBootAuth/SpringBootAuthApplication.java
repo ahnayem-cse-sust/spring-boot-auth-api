@@ -1,13 +1,13 @@
-package com.iosoup.AuthSpringBoot;
+package com.iosoup.SpringBootAuth;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AuthSpringBootApplication {
+public class SpringBootAuthApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AuthSpringBootApplication.class, args);
+		SpringApplication.run(SpringBootAuthApplication.class, args);
 	}
 
 }
