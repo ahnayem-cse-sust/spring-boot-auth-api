@@ -1,13 +1,13 @@
-package com.iosoup.SpringBootAuth;
+package com.iosoup.springbootjwt;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootAuthApplication {
+public class SpringbootJwtApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootAuthApplication.class, args);
+		SpringApplication.run(SpringbootJwtApplication.class, args);
 	}
 
 }
