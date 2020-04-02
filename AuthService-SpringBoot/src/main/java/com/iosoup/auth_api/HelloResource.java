@@ -5,10 +5,18 @@
  */
 package com.iosoup.auth_api;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
 /**
  *
  * @author nayem
  */
+@Controller
 public class HelloResource {
     
+    @RequestMapping({ "/hello" })
+    public String hello() {
+        return "Hello World";
+    }
 }
