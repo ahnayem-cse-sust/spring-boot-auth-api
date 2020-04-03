@@ -5,10 +5,28 @@
  */
 package com.iosoup.auth_api;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.web.bind.annotation.RequestMapping;
+
 /**
  *
  * @author nayem
  */
-public class HelloControllerWar {
+@SpringBootApplication
+public class HelloControllerWar extends SpringBootServletInitializer{
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(HelloControllerWar.class);
+    }
+    public static void main(String[] args) {
+        SpringApplication.run(HelloControllerWar.class, args);
+    }
     
+    @RequestMapping(value = "/")
+    public String hello() {
+        return "Hello World from Tomcat";
+    }
 }

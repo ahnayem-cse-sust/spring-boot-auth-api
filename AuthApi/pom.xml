@@ -16,8 +16,11 @@
 
 	<properties>
 		<java.version>11</java.version>
+		<start-class>com.iosoup.auth_api.HelloControllerWar</start-class>
 	</properties>
 
+        <packaging>war</packaging>
+        
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
