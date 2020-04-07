@@ -9,11 +9,14 @@ import com.iosoup.auth_api.model.Person;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
+import org.springframework.stereotype.Repository;
 
 /**
  *
  * @author nayem
  */
+
+@Repository("fakeDao")
 public class FakePersonDataAccessService implements PersonDao{
 
     private static List<Person> DB = new ArrayList<>();
