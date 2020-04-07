@@ -5,10 +5,22 @@
  */
 package com.iosoup.auth_api.service;
 
+import com.iosoup.auth_api.dao.PersonDao;
+import com.iosoup.auth_api.model.Person;
+
 /**
  *
  * @author nayem
  */
 public class PersonService {
     
+    private final PersonDao personDao;
+    
+    public PersonService(PersonDao personDao){
+        this.personDao = personDao;
+    }
+     
+    public int addPerson(Person person) {
+        return personDao.insertPerson(person);
+    }
 }
