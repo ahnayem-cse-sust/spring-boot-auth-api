@@ -7,7 +7,9 @@ package com.iosoup.auth_api.api;
 
 import com.iosoup.auth_api.model.Person;
 import com.iosoup.auth_api.service.PersonService;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -31,5 +33,10 @@ public class PersonController {
     @PostMapping
     public void addPerson(Person person){
         personService.addPerson(person);
+    }
+    
+    @GetMapping
+    public List<Person> getAllPeople() {
+        return personService.getAllPeople();
     }
 }
